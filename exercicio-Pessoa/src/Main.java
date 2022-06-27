@@ -11,5 +11,10 @@ public class Main {
         if (IMC == -1) System.out.println("Abaixo do peso");
         if (IMC == 0) System.out.println("Peso Saudavel");
         if (IMC == 1) System.out.println("Sobrepeso");
+
+        if(maiorDeIdade) System.out.println("É maior de idade");
+        else System.out.println("É menor de idade");
+
+
     }
 }
