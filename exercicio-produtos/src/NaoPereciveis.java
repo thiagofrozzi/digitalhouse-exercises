@@ -1,7 +1,10 @@
-public class NaoPereciveis {
+public class NaoPereciveis extends Produto{
     String tipo;
 
-    public NaoPereciveis(){ }
+    public NaoPereciveis(String nome, double preco, String tipo){
+        super(nome, preco);
+        this.tipo = tipo;
+    }
     public String getTipo() {
         return tipo;
     }
@@ -14,6 +17,8 @@ public class NaoPereciveis {
     public String toString() {
         return "NaoPereciveis{" +
                 "tipo='" + tipo + '\'' +
+                ", nome='" + nome + '\'' +
+                ", preco=" + preco +
                 '}';
     }
 }
